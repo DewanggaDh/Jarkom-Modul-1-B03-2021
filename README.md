@@ -1,2 +1,5 @@
 # Jarkom-Modul-1-B03-2021
-test
+
+Ada 15 soal, dibagi jadi 3
+
+Kalau mau mengecilkan gambar
