@@ -3,3 +3,5 @@
 Ada 15 soal, dibagi jadi 3
 
 Kalau mau mengecilkan gambar
+
+//<< img src=link height= weight= >>
