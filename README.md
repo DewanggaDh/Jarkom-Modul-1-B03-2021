@@ -40,14 +40,14 @@ tcp.port == 21
 Filter:
 tcp.dstport == 443
 
-<img src="https://user-images.githubusercontent.com/73766205/134611954-f04ca124-7ae9-4723-b92b-8512d5405ee5.png" height="25%" width="25%">
+<img src="https://user-images.githubusercontent.com/73766205/134611954-f04ca124-7ae9-4723-b92b-8512d5405ee5.png" height="25%" widht="25%">
 
 14.	Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
 
 Filter:
 https.host contains “kemenag”
 
-<img src="https://user-images.githubusercontent.com/73766205/134612107-6f494300-52a3-4cfd-bb03-1c6efe17f30b.png" height="25%" width="25%">
+<img src="https://user-images.githubusercontent.com/73766205/134612107-6f494300-52a3-4cfd-bb03-1c6efe17f30b.png" height="25%" widht="25%">
 
 15.	Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 membuka cmd untuk mengetahui ip dengan ‘ipconfig’
@@ -56,4 +56,4 @@ kemudian ip.src di wireshark
 Filter:
 ip.src == 192.68.1.3
 
-<img src="https://user-images.githubusercontent.com/73766205/134612245-8bf01282-f0a6-45c7-8f2a-60ccec8fda38.png" height="25%" width="25%">
+<img src="https://user-images.githubusercontent.com/73766205/134612245-8bf01282-f0a6-45c7-8f2a-60ccec8fda38.png" height="25%" widht="25%">
