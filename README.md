@@ -90,6 +90,46 @@ username: secretuser
 password: aku.pengen.pw.aja
 ```
 
+## 7. Ada 500 file zip yang disimpan ke FTP Server dengan nama 0.zip, 1.zip, 2.zip, ..., 499.zip. Simpan dan Buka file pdf tersebut. (Hint = nama pdf-nya "Real.pdf")
+
+Untuk melakukan filter upload sebuah file ftp maka kita gunakan filter `ftp.data`.
+
+Karena diketahui yang dicari adalah file `.zip` maka kita cari yang terdapat perintah ".zip" maka kita gunakan filter berikut.
+
+```
+ftp-data and ftp-data.command contains ".zip"
+```
+
+Sehingga didapatkan hasil sebagai berikut.
+
+![7a](Images/7a.png)
+
+Karena terdapat banyak sekali file `.zip` dan tidak dimungkinkan untuk mencari satu - satu pada setiap packet nya. Maka kita manfaatkan fitur filter packet bytes dan mencari file dengan nama "Real.pdf".
+
+Untuk melakukan filter packet kita buka menu nya dari Edit > Find Packet. Lalu pilih settings filter Packet Bytes dengan tipe String. Untuk mempermudah kita matikan pencarian secara Case Sensitive. Lalu filter "Real.pdf". Sehingga didapatkan hasil sebagai berikut.
+
+![7b](Images/7b.png)
+
+Dapat terlihat bahwa yang memiliki string "Real.pdf" adalah file "200.zip" dan "201.zip". Sehingga kita perlu periksa kedua file tersebut. Namun untuk lebih sederhana, kami telah memeriksa kedua file dan file ada pada file "201.zip" sehingga kami hanya menjelaskan file "201.zip".
+
+Karena kita tahu file ada pada "201.zip" maka lakukan filter file tersebut menggunakan filter berikut.
+
+```
+ftp-data and ftp-data.command contains "201.zip"
+```
+
+![7c](Images/7c.png)
+
+Pada hasil filter file "201.zip" yang paling pertama lakukan Follow TCP Stream.
+
+Lalu kita extract / download packet tersebut dan menyimpannya pada suatu directory. Lakukan settings sebelum menyimpan file dengan lakukan save Entire Conversation, Show and Save data as Raw lalu Save As dan beri nama "Real.pdf".
+
+![7d](Images/7d.png)
+
+Langkah terakhir buka file tersebut.
+
+![7e](Images/7e.png)
+
 ## 10. Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
 
 Filter : ftp-data and ftp-data.command contains ".txt"
