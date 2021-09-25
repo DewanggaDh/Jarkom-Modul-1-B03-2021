@@ -132,11 +132,15 @@ Langkah terakhir buka file tersebut.
 
 ## 8. Cari paket yang menunjukan pengambilan file dari FTP tersebut!
 
+Pada pengambilan packet FTP berarti terjadi proses download dari FTP yang berarti menggunakan command RETR.
+
 Untuk melakukan filter pengambilan packet ftp maka kita gunakan filter berikut.
 
 ```
 ftp contains RETR
 ```
+
+Dapat dilihat bahwa tidak ada packet pengambilan data dari FTP yang terjadi.
 
 ![8a](Images/8a.png)
 
