@@ -99,7 +99,7 @@ tcp.port == 21
 Filter:
 tcp.dstport == 443
 
-<img src="https://user-images.githubusercontent.com/73766205/134611954-f04ca124-7ae9-4723-b92b-8512d5405ee5.png" height="25%" widht="25%">
+![image](https://user-images.githubusercontent.com/73766205/134769026-d00f3d54-bd3a-45f4-a683-72f21ed2ab3e.png)
 
 ## 14.	Filter sehingga wireshark hanya mengambil paket yang tujuannya ke kemenag.go.id!
 
@@ -107,7 +107,6 @@ Filter:
 tcp contains "kemenag" and ip.src == 192.168.1.3
 
 <img src="https://user-images.githubusercontent.com/73766205/134768765-6f1981c9-cf49-41c0-bfc6-dbe7319eeace.png" height="25%">
-
 
 ## 15.	Filter sehingga wireshark hanya mengambil paket yang berasal dari ip kalian!
 membuka cmd untuk mengetahui ip dengan ‘ipconfig’
@@ -117,9 +116,9 @@ Pertama, cari alamat IPv4 melalui CmD
 
 ![image](https://user-images.githubusercontent.com/73766205/134768812-8117b79c-6faa-427f-a23f-6f74e9b24b6e.png)
 
-Ditemukan alamat 92.168.1.3
+Ditemukan alamat 192.168.1.3
 
 Filter:
 ip.src == 192.168.1.3
 
-<img src="https://user-images.githubusercontent.com/73766205/134612245-8bf01282-f0a6-45c7-8f2a-60ccec8fda38.png" height="25%" widht="25%">
+<img src="https://user-images.githubusercontent.com/73766205/134612245-8bf01282-f0a6-45c7-8f2a-60ccec8fda38.png">
