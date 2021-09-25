@@ -43,24 +43,24 @@ Setelah masuk ke laman berikutnya
 ## 4.	Temukan paket mysql yang mengandung perintah query select!
 
 Filter:
-```mysql.query == “select” ```
+```mysql contains SELECT ```
 
-![4](https://user-images.githubusercontent.com/55073331/134757540-34ad1c70-19cc-4a2a-8033-b66dae055f47.jpg)
+![image](https://user-images.githubusercontent.com/73766205/134773069-7f3a1a7e-1698-4aa8-ba18-8636779fcc91.png)
 
 Maka akan ditampilkan sesuai filter
  
-
 ## 5.	Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
 
 Filter:
-``` mysql ```
+``` mysql contains INSERT ```
 
-![5](https://user-images.githubusercontent.com/55073331/134757542-5210f0eb-1741-44be-a681-1c5791154466.jpg)
+![image](https://user-images.githubusercontent.com/73766205/134773040-ea49b79d-a14e-4014-9e84-8a7c3d071ae2.png)
 
 ```
 Username: akakanomi
 Password: pemisah4lautan
 ```
+
 ![5b](https://user-images.githubusercontent.com/55073331/134757544-e3744bc5-e1df-44ba-a174-193d106afcb8.jpg)
 
 ## 6. Cari username dan password ketika melakukan login ke FTP Server!
