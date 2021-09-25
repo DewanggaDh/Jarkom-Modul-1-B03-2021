@@ -44,6 +44,7 @@ Setelah masuk ke laman berikutnya
 
 Filter:
 ```mysql.query == “select” ```
+
 ![4](https://user-images.githubusercontent.com/55073331/134757540-34ad1c70-19cc-4a2a-8033-b66dae055f47.jpg)
 
 Maka akan ditampilkan sesuai filter
@@ -84,14 +85,14 @@ Password Zip : d1b1langbukanapaapajugagapercaya
 Filter:
 tcp.srcport == 80
 
-<img src="https://user-images.githubusercontent.com/73766205/134611863-6691920d-9b39-41f5-9e32-b1b8154f5c5c.png" height="25%" widht="25%">
+<img src="https://user-images.githubusercontent.com/73766205/134768901-db51ca6f-872c-4895-9fc6-0464510b56cd.png" height="%25">
 
 ## 12.	Filter sehingga wireshark hanya mengambil paket yang mengandung port 21!
 
 Filter:
 tcp.port == 21
 
-<img src="https://user-images.githubusercontent.com/73766205/134611912-fb51ad83-6f45-4f20-9c5d-1720b14ca25c.png" height="25%" widht="25%">
+<img src="https://user-images.githubusercontent.com/73766205/134768978-c384431a-0f23-4d1c-916c-41e589b2c35a.png" height="25%">
 
 ## 13.	Filter sehingga wireshark hanya menampilkan paket yang menuju port 443!
 
