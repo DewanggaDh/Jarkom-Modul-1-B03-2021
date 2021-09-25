@@ -9,7 +9,7 @@ Kelompok B3
 ## 1.	Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! (nginx/1.18.0 (Ubuntu))
 
 Filter:
-	```https.host eq “ichimarumaru.tech” ```
+	```http.host eq “ichimarumaru.tech” ```
 
 ![1](https://user-images.githubusercontent.com/55073331/134757528-3748d4c8-2ccb-4fb8-a656-f4762c6c2812.jpg)
 
