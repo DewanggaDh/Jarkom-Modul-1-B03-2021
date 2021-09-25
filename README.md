@@ -130,6 +130,16 @@ Langkah terakhir buka file tersebut.
 
 ![7e](Images/7e.png)
 
+## 8. Cari paket yang menunjukan pengambilan file dari FTP tersebut!
+
+Untuk melakukan filter pengambilan packet ftp maka kita gunakan filter berikut.
+
+```
+ftp contains PASV
+```
+
+![8a](Images/8a.png)
+
 ## 10. Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
 
 Filter : ftp-data and ftp-data.command contains ".txt"
