@@ -140,6 +140,30 @@ ftp contains PASV
 
 ![8a](Images/8a.png)
 
+## 9. Dari paket-paket yang menuju FTP terdapat indikasi penyimpanan beberapa file. Salah satunya adalah sebuah file berisi data rahasia dengan nama "secret.zip". Simpan dan buka file tersebut!
+
+Untuk melakukan filter upload sebuah file ftp maka kita gunakan filter `ftp.data`.
+
+Karena diketahui yang dicari adalah file `.zip` maka kita cari yang terdapat perintah ".zip" maka kita gunakan filter berikut.
+
+```
+ftp-data and ftp-data.command contains "secret.zip"
+```
+
+Sehingga didapatkan hasil sebagai berikut.
+
+![9a](Images/9a.png)
+
+Pada hasil filter file "secret.zip" yang paling pertama lakukan Follow TCP Stream.
+
+Lalu kita extract / download packet tersebut dan menyimpannya pada suatu directory. Lakukan settings sebelum menyimpan file dengan lakukan save Entire Conversation, Show and Save data as Raw lalu Save As dan beri nama "secret.zip".
+
+![9b](Images/9b.png)
+
+Langkah terakhir buka file tersebut.
+
+![9c](Images/9c.png)
+
 ## 10. Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
 
 Filter : ftp-data and ftp-data.command contains ".txt"
