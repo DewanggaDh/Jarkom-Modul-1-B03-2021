@@ -66,6 +66,7 @@ Password: pemisah4lautan
 ## 10. Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
 
 Filter : ftp-data and ftp-data.command contains ".txt"
+
 <img src="https://user-images.githubusercontent.com/73766205/134611025-6081de7b-ea7b-4c15-8000-41d930a8e054.png" height="25%" widht="25%">
 
 <img src="https://user-images.githubusercontent.com/73766205/134611076-bee2956b-a949-4fee-8cd8-147ede5548d1.png" height="25%" widht="25%">
@@ -111,7 +112,13 @@ tcp contains "kemenag" and ip.src == 192.168.1.3
 membuka cmd untuk mengetahui ip dengan ‘ipconfig’
 kemudian ip.src di wireshark 
 
+Pertama, cari alamat IPv4 melalui CmD
+
+![image](https://user-images.githubusercontent.com/73766205/134768812-8117b79c-6faa-427f-a23f-6f74e9b24b6e.png)
+
+Ditemukan alamat 92.168.1.3
+
 Filter:
-ip.src == 192.68.1.3
+ip.src == 192.168.1.3
 
 <img src="https://user-images.githubusercontent.com/73766205/134612245-8bf01282-f0a6-45c7-8f2a-60ccec8fda38.png" height="25%" widht="25%">
