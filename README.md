@@ -135,7 +135,7 @@ Langkah terakhir buka file tersebut.
 Untuk melakukan filter pengambilan packet ftp maka kita gunakan filter berikut.
 
 ```
-ftp contains PASV
+ftp contains RETR
 ```
 
 ![8a](Images/8a.png)
