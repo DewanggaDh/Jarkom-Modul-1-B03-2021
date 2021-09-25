@@ -63,6 +63,32 @@ Password: pemisah4lautan
 ```
 ![5b](https://user-images.githubusercontent.com/55073331/134757544-e3744bc5-e1df-44ba-a174-193d106afcb8.jpg)
 
+## 6. Cari username dan password ketika melakukan login ke FTP Server!
+
+Untuk melakukan filter FTP maka kita gunakan filter `ftp`.
+
+Karena yang dicari merupakan info login, maka terjadi request login ke ftp jadi kita gunakan filter `ftp.request`.
+
+Karena mencari user untuk login ftp maka kita cari command USER menggunakan filter `ftp.request.command == USER`
+
+Karena mencari password untuk login ftp maka kita cari command PASS menggunakan filter `ftp.request.command == PASS`
+
+Sehingga kita gabungkan filter tersebut menjadi berikut.
+
+```
+ftp.request.command == USER || ftp.request.command == PASS
+```
+
+Sehingga didapatkan hasil sebagai berikut.
+
+![6a](Images/6a.png)
+
+Sehingga informasi user ftp dapat diambil kesimpulan sebagai berikut.
+
+```
+username: secretuser
+password: aku.pengen.pw.aja
+```
 
 ## 10. Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
 
