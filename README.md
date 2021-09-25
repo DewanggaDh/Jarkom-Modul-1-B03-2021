@@ -168,17 +168,23 @@ Langkah terakhir buka file tersebut.
 
 Filter : ftp-data and ftp-data.command contains ".txt"
 
-<img src="https://user-images.githubusercontent.com/73766205/134611025-6081de7b-ea7b-4c15-8000-41d930a8e054.png" height="25%" widht="25%">
+<img src="https://user-images.githubusercontent.com/73766205/134611025-6081de7b-ea7b-4c15-8000-41d930a8e054.png">
 
-<img src="https://user-images.githubusercontent.com/73766205/134611076-bee2956b-a949-4fee-8cd8-147ede5548d1.png" height="25%" widht="25%">
+Ada dua file, history.txt dan bukanapaapa.txt. Pertama follow TCP paket berisi history.txt sehingga ditemukan riwayat perubahan sebuah file secret.zip, yang mana passwordnya diubah menurut apa yang ada di dalam file bukanapaapa.txt.
 
-<img src="https://user-images.githubusercontent.com/73766205/134611540-4f2a956e-3a36-4041-8628-8b95b24f5415.png" height="25%" widht="25%">
+<img src="https://user-images.githubusercontent.com/73766205/134611076-bee2956b-a949-4fee-8cd8-147ede5548d1.png">
 
-<img src="https://user-images.githubusercontent.com/73766205/134611554-25cf3d10-0b83-446b-aa52-ab3245882131.png" height="25%" widht="25%">
+Lalu difollow TCP paket berisi bukanapaapa.txt sehingga ditemukan isi filenya.
+
+<img src="https://user-images.githubusercontent.com/73766205/134611540-4f2a956e-3a36-4041-8628-8b95b24f5415.png">
+
+<img src="https://user-images.githubusercontent.com/73766205/134611554-25cf3d10-0b83-446b-aa52-ab3245882131.png">
 
 Password Zip : d1b1langbukanapaapajugagapercaya
 
-<img src="https://user-images.githubusercontent.com/73766205/134611575-6bf386c3-f828-4528-b958-383e93a74d90.png" height="25%" widht="25%">
+Untuk membuka zip tersebut, dimasukkan password diatas untuk membuka gambar png berikut.
+
+<img src="https://user-images.githubusercontent.com/73766205/134611575-6bf386c3-f828-4528-b958-383e93a74d90.png">
 
 ## 11.Filter sehingga wireshark hanya mengambil paket yang berasal dari port 80!
 
