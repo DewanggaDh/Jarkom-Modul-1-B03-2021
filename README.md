@@ -6,6 +6,69 @@ Kalau mau mengecilkan gambar
 
 //<< img src=link height= widht= >>
 
+Jaringan Komputer B
+Kelompok B3
+-	Dewangga Dharmawan (05111940000029)
+-	Ahmad Syafiq Aqil Wafi (05111940000089)
+-	Nouvelli Cornelia (05111940000011)
+
+## 1.	Sebutkan webserver yang digunakan pada "ichimarumaru.tech"! (nginx/1.18.0 (Ubuntu))
+
+Filter:
+	```https.host eq “ichimarumaru.tech” ```
+
+![1](https://user-images.githubusercontent.com/55073331/134757528-3748d4c8-2ccb-4fb8-a656-f4762c6c2812.jpg)
+
+![1b](https://user-images.githubusercontent.com/55073331/134757534-a08b09ad-25de-4b97-8b30-325dc3cdc95d.jpg)
+
+## 2.	Temukan paket dari web-web yang menggunakan basic authentication method!
+
+Filter:
+```http.authbasic```
+
+![2](https://user-images.githubusercontent.com/55073331/134757537-5e765ae2-541f-4be5-8e57-28fda2bea03e.jpg)
+
+ 
+## 3.	Ikuti perintah di basic.ichimarumaru.tech! Username dan password bisa didapatkan dari file .pcapng!
+
+Filter:
+```http.host eq "basic.ichimarumaru.tech" and http.authbasic```
+
+```
+Username : kuncimenujulautan
+Password : tQKEJFbgNGC1NCZlWAOjhyCOm6o3xEbPkJhTciZN
+```
+
+
+![3](https://user-images.githubusercontent.com/55073331/134757538-5ab286a6-3b33-46bc-9447-43fe831f60d1.jpg)
+
+Setelah masuk ke laman berikutnya 
+
+![3b](https://user-images.githubusercontent.com/55073331/134757539-0293af32-3bdc-41d7-aac3-95da32e10f84.jpg)
+
+## 4.	Temukan paket mysql yang mengandung perintah query select!
+
+Filter:
+```mysql.query == “select” ```
+![4](https://user-images.githubusercontent.com/55073331/134757540-34ad1c70-19cc-4a2a-8033-b66dae055f47.jpg)
+
+Maka akan ditampilkan sesuai filter
+ 
+
+## 5.	Login ke portal.ichimarumaru.tech kemudian ikuti perintahnya! Username dan password bisa didapat dari query insert pada table users dari file .pcap!
+
+Filter:
+``` mysql ```
+
+![5](https://user-images.githubusercontent.com/55073331/134757542-5210f0eb-1741-44be-a681-1c5791154466.jpg)
+
+```
+Username: akakanomi
+Password: pemisah4lautan
+```
+![5b](https://user-images.githubusercontent.com/55073331/134757544-e3744bc5-e1df-44ba-a174-193d106afcb8.jpg)
+
+
 10. Selain itu terdapat "history.txt" yang kemungkinan berisi history bash server tersebut! Gunakan isi dari "history.txt" untuk menemukan password untuk membuka file rahasia yang ada di "secret.zip"!
 
 Filter : ftp-data and ftp-data.command contains ".txt"
